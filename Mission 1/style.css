@@ -15,7 +15,6 @@
     overflow: hidden;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(6,1fr);
-    text-align: center;
     grid-template-areas:
         'kuning hitam hitam hitam'
         'hijau coklat pink biru'
@@ -23,9 +22,9 @@
         'biruTua abu abu ungu'
         'biruTua abu abu ungu'
         'biruTua orange orange ungu';
-    gap: 5px;
+    gap: 2px;
     background-color: black;
-    padding: 5px;
+    padding: 2px;
 }
 
 .grid-container > div {

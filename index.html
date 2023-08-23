@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kuning { grid-area: kuning; }
+        #hitam { grid-area: hitam; }
+        #hijau { grid-area: hijau; }
+        #coklat { grid-area: coklat; }
+        #pink { grid-area: pink; }
+        #merah { grid-area: merah; }
+        #putih { grid-area: putih; }
+        #biruTua { grid-area: biruTua; }
+        #abu { grid-area: abu; }
+        #ungu { grid-area: ungu; }
+        #orange { grid-area: orange; }
+        
+        .grid-container {
+            display: grid;
+            overflow: hidden;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(6,1fr);
+            text-align: center;
+            grid-template-areas:
+                'kuning hitam hitam hitam'
+                'hijau coklat pink biru'
+                'merah putih pink ungu'
+                'biruTua abu abu ungu'
+                'biruTua abu abu ungu'
+                'biruTua orange orange ungu';
+            gap: 5px;
+            background-color: black;
+            padding: 5px;
+        }
+        
+        .grid-container > div {
+            font-family: arial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        #hitam {
+            background-color: black;
+        }
+
+        #kuning {
+            background-color: yellow;
+        }
+
+        #hijau {
+            background-color: green;
+        }
+
+        #coklat {
+            background-color: rgb(255, 153, 0);
+        }
+
+        #pink{
+            background-color: pink;
+        }
+
+        #biru{
+            background-color: rgb(0, 191, 255);
+        }
+
+        #merah{
+            background-color: red;
+        }
+
+        #putih{
+            background-color: white;
+        }
+
+        #biruTua{
+            background-color: blue;
+        }
+
+        #abu{
+            background-color: rgb(126, 131, 131);
+        }
+
+        #ungu {
+            background-color: blueviolet;
+        }
+
+        #orange{
+            background-color: orange;
+        }
+
+        .font-white{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="kuning">Kuning</div>
+        <div class="font-white" id="hitam">Hitam</div>
+        <div id="hijau">Hijau</div>
+        <div class="font-white" id="coklat">Coklat</div>
+        <div id="pink">Pink</div>
+        <div id="biru">Biru</div>
+        <div id="merah">Merah</div>
+        <div id="putih">Putih</div>
+        <div id="biruTua">Biru Tua</div>
+        <div id="abu">Abu</div>
+        <div class="font-white" id="ungu">Ungu</div>
+        <div id="orange">Orange</div>
+    </div>
+</body>
+</html>

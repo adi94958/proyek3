@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 2</title>
+    <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p class="h1 mt-2 mb-3">ICashier</p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/profil.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <h5 class="card-title"><span id="nama-barang0"></span></h5>
+                                <p class="card-text">Rp. <span id="harga-barang0"></span></p>
+                                <div class="row" style="display: flex; text-align: center; align-items: center;">
+                                    <div class="col-4">
+                                        <button id="kurangi-barang0" class="btn btn-danger" onclick="kurangiNilai(0)">-</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <input id="jumlah-barang0" type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="col-4">
+                                        <button id="tambah-barang0" class="btn btn-primary" onclick="tambahNilai(0)">+</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="btn btn-success" onclick="addBarang(0)">Tambah Barang</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/profil.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <h5 class="card-title" id="nama-barang1"></h5>
+                                <p class="card-text" id="harga-barang1"></p>
+                                <div class="row" style="display: flex; text-align: center; align-items: center;">
+                                    <div class="col-4">
+                                        <button id="kurangi-barang1" class="btn btn-danger" onclick="kurangiNilai(1)">-</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <input id="jumlah-barang1" type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="col-4">
+                                        <button id="tambah-barang1" class="btn btn-primary" onclick="tambahNilai(1)">+</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="btn btn-success" onclick="addBarang(1)">Tambah Barang</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/profil.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <h5 class="card-title" id="nama-barang2"></h5>
+                                <p class="card-text" id="harga-barang2"></p>
+                                <div class="row" style="display: flex; text-align: center; align-items: center;">
+                                    <div class="col-4">
+                                        <button id="kurangi-barang2" class="btn btn-danger" onclick="kurangiNilai(2)">-</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <input id="jumlah-barang2" type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="col-4">
+                                        <button id="tambah-barang2" class="btn btn-primary" onclick="tambahNilai(2)">+</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="btn btn-success" onclick="addBarang(2)">Tambah Barang</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/profil.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <h5 class="card-title" id="nama-barang3"></h5>
+                                <p class="card-text" id="harga-barang3"></p>
+                                <div class="row" style="display: flex; text-align: center; align-items: center;">
+                                    <div class="col-4">
+                                        <button id="kurangi-barang3" class="btn btn-danger" onclick="kurangiNilai(3)">-</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <input id="jumlah-barang3" type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="col-4">
+                                        <button id="tambah-barang3" class="btn btn-primary" onclick="tambahNilai(3)">+</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="btn btn-success" onclick="addBarang(3)">Tambah Barang</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/profil.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <h5 class="card-title" id="nama-barang4"></h5>
+                                <p class="card-text" id="harga-barang4"></p>
+                                <div class="row" style="display: flex; text-align: center; align-items: center;">
+                                    <div class="col-4">
+                                        <button id="kurangi-barang
+                                        +4" class="btn btn-danger" onclick="kurangiNilai(4)">-</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <input id="jumlah-barang4" type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="col-4">
+                                        <button id="tambah-barang4" class="btn btn-primary" onclick="tambahNilai(4)">+</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="btn btn-success" onclick="addBarang(4)">Tambah Barang</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/profil.jpg" class="card-img-top" alt="profil">
+                            <div class="card-body">
+                                <h5 class="card-title" id="nama-barang5"></h5>
+                                <p class="card-text" id="harga-barang5"></p>
+                                <div class="row" style="display: flex; text-align: center; align-items: center;">
+                                    <div class="col-4">
+                                        <button id="kurangi-barang5" class="btn btn-danger" onclick="kurangiNilai(5)">-</button>
+                                    </div>
+                                    <div class="col-4">
+                                        <input id="jumlah-barang5" type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="col-4">
+                                        <button id="tambah-barang5" class="btn btn-primary" onclick="tambahNilai(5)">+</button>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="btn btn-success" onclick="addBarang(5)">Tambah Barang</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <p class="h1 mt-2 mb-3">My Chart</p>
+                <ul class="list-group list-group-flush" id="informasi-barang"></ul>
+                <div class="text-end">
+                    <p id="total-pembelian"></p>
+                    <p id="pajak"></p>
+                    <p id="total-bayar"></p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="style.js"></script>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
